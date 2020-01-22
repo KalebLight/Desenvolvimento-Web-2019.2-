@@ -1,0 +1,60 @@
+.container-fluid{
+    padding: 0;
+    background-color:#353535;
+}
+
+.add-div{
+    background-color: #347ae2;
+    cursor: pointer;
+    display: inline-block;
+    color: #353535;
+    padding: 8px;
+    border-right: 5px;
+    border-left: 25px;
+    margin-bottom: 15px;
+}
+
+/* lista */
+.list-div {
+    padding: 0;
+}
+
+.list-div, h1{
+    color: white;
+}
+
+.delete-task, .edit-task, .status-task{
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+}
+
+.task-item{
+    border-bottom: 1px dashed #CCC;
+    height: 10px;
+    list-style: none;
+}
+
+.task-item.done{
+    background-color:rgb(26, 28, 29) !important;
+}
+
+.task-item, a{
+    padding-bottom: 40px;
+}
+.add-div{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.search-div{
+    display: inline-block;
+}
+
+.body{
+    background-color: black;
+}
+
+.auth-card{
+    margin-bottom: 30px;
+}

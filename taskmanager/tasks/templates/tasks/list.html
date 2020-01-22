@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Tarefas{% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <h1>Lista</h1>
+    <a href="newtask/"><div class="col-2 add-div">Adicionar tarefa</div></a>
+   
+    <ul class="task-list">
+        {% for task in tasks %}
+        {% if task.done == 'fazendo' %}
+        <li class="task-item">
+
+        {% else %}
+        <li class="task-item done">
+        {% endif %}
+            <span><a href="/task/{{task.id}}">{{task.title}}</a></span>
+            <span class="delete-task"><a href="/delete/{{task.id}}">Deletar</a></span>
+            <span class="edit-task"><a href="/edit/{{task.id}}">Editar</a></span>
+            <span class="status-task"><a href="/changestatus/{{task.id}}">Mudar Status</a></span>
+            {% endfor %}
+        </li>
+    </ul>    
+</div>
+{% endblock %}
